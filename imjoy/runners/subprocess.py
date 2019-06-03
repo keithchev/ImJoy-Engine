@@ -24,8 +24,8 @@ from .helper import (
     run_process,
 )
 
-DEFAULT_REQUIREMENTS_PY2 = ["numpy", "python-socketio[client]"]
-DEFAULT_REQUIREMENTS_PY3 = ["numpy", "python-socketio[client]", "janus"]
+DEFAULT_REQUIREMENTS_PY2 = ["numpy", "python-socketio[client]==3.1.2"]
+DEFAULT_REQUIREMENTS_PY3 = ["numpy", "python-socketio[client]==3.1.2", "janus==0.4.0"]
 REQ_PSUTIL = ["psutil"]
 REQ_PSUTIL_CONDA = ["conda:psutil"]
 TEMPLATE_SCRIPT = (HERE / "workers" / "python_worker.py").resolve()
